@@ -56,3 +56,21 @@ const questions = [{
         message: 'Does this project have tests?',
     }
 ];
+
+// function to initialize program
+function init() {
+    console.log("Inside the init function")
+    inquirer.prompt(questions).then((response) => {
+        fs.writeFileSync("exampleREADME.md", generateMarkdown(response), function(err) {
+
+            if (err) {
+                console.log(err)
+            } else {
+                console.log("Success")
+            }
+        })
+    })
+}
+
+// function call to initialize program
+init();
