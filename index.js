@@ -6,13 +6,13 @@ const generateMarkdown = require("./utils/generateMarkdown.js")
 // array of questions for user
 const questions = [{
         type: 'input',
-        name: 'title',
-        message: 'What is the name of your application?',
+        name: 'name',
+        message: 'What is your name?',
     },
     {
         type: 'input',
-        name: 'name',
-        message: 'What is your name?',
+        name: 'title',
+        message: 'What is the title of your application?',
     },
     {
         type: 'input',
@@ -32,7 +32,7 @@ const questions = [{
     {
         type: 'input',
         name: 'installation',
-        message: 'How does someone install this project?',
+        message: 'what command is used to install this file?',
     },
     {
         type: 'input',
@@ -53,7 +53,7 @@ const questions = [{
     {
         type: 'input',
         name: 'tests',
-        message: 'Does this project have tests?',
+        message: 'what command is used to run tests?',
     }
 ];
 
